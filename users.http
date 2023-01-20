@@ -1,0 +1,36 @@
+###
+
+GET http://localhost:8000/users HTTP/1.1
+
+### 
+
+POST http://localhost:8000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "mysecretpassword",
+    "address": "123 Main St",
+    "zipcode": "12345",
+    "state": "NY"
+}
+
+
+###
+
+PUT http://localhost:8000/users/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Johnr Doer",
+    "email": "johndoe@uhul.com",
+    "password": "mysecretpassword",
+    "address": "123 Main St",
+    "zipcode": "12345",
+    "state": "NY"
+}
+
+###
+
+DELETE http://localhost:8000/users/2 HTTP/1.1
